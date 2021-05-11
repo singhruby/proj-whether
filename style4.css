@@ -1,0 +1,81 @@
+.banner-area{
+    background-image: url(weather.webp);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+body{
+    
+        margin: 0;
+        padding: 0;   
+}
+header{
+    padding: 15px 60px;
+}
+.menu {
+    width: 100px;
+    float: right;
+    list-style: none;
+}
+.menu li{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    float: left;
+}
+menu li:hover{
+    background: green;
+}
+.menu li:hover a{
+    color:#000;
+}
+.menu li a{
+    text-decoration: none;
+    font-family: baloo;
+    color: aqua;
+    text-transform: uppercase; 
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%.-50%);
+    color: #fff;
+    text-align: center;
+}
+.banner-text h2{
+    font-family: baloo;
+    margin: 0;
+    font-size: 55px;
+    color: aqua;
+}
+.banner-text p{
+    font-size: 22px;
+    margin: 0;
+    font-family: poppins;
+    
+    
+}
+.banner-text a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-size: 17px;
+    padding: 10px 35px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5%;
+    font-family: poppins;
+    text-decoration: uppercase;
+}
+.banner-text a:hover{
+    border-color:azure;
+    background: azure;
+    transition: .9s;
+    color: #262626;
+    
+}
+    
