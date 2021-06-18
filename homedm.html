@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>how to check current weather></title>
+    <link rel="stylesheet" href="homedm.css">
+    
+    </head>
+    <body>
+
+<div class="tabs">
+    <div class="tab-header">
+      <div class="active">
+        <i class=""></i> today
+      </div>
+      <div>
+        <i class=""></i> hourly
+      </div>
+      <div>
+        <i class=""></i> daily
+      </div>
+      <div>
+        <i class=""></i> air quality
+      </div>
+    </div>
+    <div class="tab-indicator"></div>
+    <div class="tab-body">
+      <div class="active">
+                <div>
+          
+                <h1>21<sup>o</sup></h1>
+                <h2>Current Weather</h2>
+                                
+            
+                <div class="bottom">
+                  <div>
+                      Wind Speed <span>  "km/hr" </span>
+                  </div>
+                  </div>
+                  <div class="bottom1">
+                   <div>  Humidity <span>  "30%"  </span> </span></div>
+                </div>
+               
+                <div class="bottom2">
+                  <div>  pressure <span>  "4"  </span></div>
+             </div> 
+             <div class="bottom3">
+              <div>  lat & long <span>  "4567"  </span></div>
+         </div> 
+                <div class="location">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                  <span>Hyderabad, India</span>
+               
+      </div>
+    </div>
+
+         <div class="tab-indicator"></div>
+      <div class="tab-body">
+        <div class="active">
+                  <div>
+            
+                  <h1>21<sup>o</sup></h1>
+                  <h2>time</h2>
+                                  
+              
+                  <div class="bottom">
+                    <div>
+                        Wind Speed <span>  "km/hr" </span>
+                    </div>
+                    </div>
+                    <div class="bottom1">
+                     <div>  Humidity <span>  "30%"  </span> </span></div>
+                  </div>
+                 
+                  <div class="bottom2">
+                    <div>  pressure <span>  "4"  </span></div>
+               </div> 
+               <div class="bottom3">
+                <div>  lat & long <span>  "4567"  </span></div>
+           </div> 
+                  <div class="location">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                    <span>Hyderabad, India</span>
+                 
+        </div>
+      </div>
+               
+        <div class="tab-indicator"></div>
+        <div class="tab-body">
+          <div class="active">
+                    <div>
+              
+                    <h1>21<sup>o</sup></h1>
+                    <h2>time</h2>
+                                    
+                
+                    <div class="bottom">
+                      <div>
+                          Wind Speed <span>  "km/hr" </span>
+                      </div>
+                      </div>
+                      <div class="bottom1">
+                       <div>  Humidity <span>  "30%"  </span> </span></div>
+                    </div>
+                   
+                    <div class="bottom2">
+                      <div>  pressure <span>  "4"  </span></div>
+                 </div> 
+                 <div class="bottom3">
+                  <div>  lat & long <span>  "4567"  </span></div>
+             </div> 
+                    <div class="location">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                      <span>Hyderabad, India</span>
+                   
+          </div>
+        </div>
+                 
+
+        <div class="tab-indicator"></div>
+        <div class="tab-body">
+          <div class="active">
+                    <div>
+              
+                    <h1>21<sup>o</sup></h1>
+                    <h2>time</h2>
+                                    
+                
+                    <div class="bottom">
+                      <div>
+                          Wind Speed <span>  "km/hr" </span>
+                      </div>
+                      </div>
+                      <div class="bottom1">
+                       <div>  Humidity <span>  "30%"  </span> </span></div>
+                    </div>
+                   
+                    <div class="bottom2">
+                      <div>  pressure <span>  "4"  </span></div>
+                 </div> 
+                 <div class="bottom3">
+                  <div>  lat & long <span>  "4567"  </span></div>
+             </div> 
+                    <div class="location">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                      <span>Hyderabad, India</span>
+                   
+          </div>
+        </div>
+                 
+  
+
+
+
+     </div>
+    </div>
+      <script>
+          let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
+ 
+let tabsPane = tabHeader.getElementsByTagName("div");
+ 
+for(let i=0;i<tabsPane.length;i++){
+  tabsPane[i].addEventListener("click",function(){
+    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+    tabsPane[i].classList.add("active");
+    tabBody.getElementsByClassName("active")[0].classList.remove("active");
+    tabBody.getElementsByTagName("div")[i].classList.add("active");
+    
+    tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+m  });
+}
+      </script>
+    </div>
+  </div>
+  </body>
+  </html>

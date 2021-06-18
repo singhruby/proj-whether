@@ -1,0 +1,159 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+  background:#ddd;
+  font-family:"Raleway";
+}
+
+.tabs {
+  position:absolute;
+  top:70%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:700px;
+  height:450px;
+  background:#f5f5f5;
+  padding:20px 30px;
+  overflow:hidden;
+  border-radius:50px;
+  box-shadow:5px 10px 5px #ccc;
+}
+.tabs .tab-header {
+  height:60px;
+  display:flex;
+  align-items:center;
+}
+.tabs .tab-header > div {
+  width:calc(100% / 4);
+  text-align:center;
+  color:#888;
+  font-weight:600;
+  cursor:pointer;
+  font-size:14px;
+  text-transform:uppercase;
+  outline:none;
+}
+.tabs .tab-header > div > i {
+  display:block;
+  margin-bottom:5px;
+}
+.tabs .tab-header > div.active {
+  color:teal;
+}
+.tabs .tab-indicator {
+  position:relative;
+  width:calc(100% / 4);
+  height:5px;
+  background:teal;
+  left:0px;
+  border-radius:5px;
+  transition:all 500ms ease-in-out;
+}
+.tabs .tab-body {
+  position:relative;
+  height:calc(100% - 60px);
+  padding:10px 25px;
+}
+.tabs .tab-body > div {
+  position:absolute;
+  top:-200%;
+  opacity:0;
+  transform:scale(0.9);
+  transition:opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+}
+.tabs .tab-body > div.active {
+  top:0px;
+  opacity:1;
+  transform:scale(1);
+}.tab-body h1 {
+  font-size: 100px;
+  position: fixed;
+  text-align: left;
+  left: 400px;
+  top: -30px;
+  color: transparent;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+}.tab-body h2 {
+  font-size: 30px;
+  position: fixed;
+  
+top: 1px;
+  text-align: left;
+  color: transparent;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+.tabs .tab-body p {
+  font-size: 20px; 
+  color:#000;
+  top: 10px;
+}
+.tabs .tab-body .location > div >i{
+  position: fixed;
+  color:teal;
+  text-align: left;
+  top: 5px;
+  left: 400px;
+  font-size: 25px;
+} .tabs .tab-body .bottom{
+  display: table-cell;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-self: center;
+  color: teal ;
+}.tabs .tab-body .bottom div{
+  display: table-column;
+  margin: 5px 10px 5px 10px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 1.25em;
+  text-shadow: 1px 1px 5px #707070;
+  
+}.tabs .tab-body .bottom1{
+display: table-cell;
+width: 100%;
+position: absolute;
+top: 150px;
+display: flex;
+justify-self: center;
+color: teal;
+}.tabs .tab-body .bottom1 div{
+display: table-column;
+margin: 5px 10px 5px 10px;
+text-align: center;
+line-height: 100%;
+font-size: 1.25em;
+text-shadow: 1px 1px 5px #707070;
+}.tabs .tab-body .bottom2{
+display: table-cell;
+width: 100%;
+position: absolute;
+top: 200px;
+display: flex;
+justify-self: center;
+color: teal;
+}.tabs .tab-body .bottom2 div{
+display: table-column;
+margin: 5px 10px 5px 10px;
+text-align: center;
+line-height: 100%;
+font-size: 1.25em;
+text-shadow: 1px 1px 5px #707070;
+}.tabs .tab-body .bottom3{
+display: table-cell;
+width: 100%;
+position: absolute;
+top: 250px;
+display: flex;
+justify-self: center;
+color: teal ;
+}.tabs .tab-body .bottom3 div{
+display: table-column;
+margin: 5px 10px 5px 10px;
+text-align: center;
+line-height: 100%;
+font-size: 1.25em;
+text-shadow: 1px 1px 5px #707070;
+}
