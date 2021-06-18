@@ -26,7 +26,6 @@
     <div class="tab-indicator"></div>
     <div class="tab-body">
       <div class="active">
-                <div>
           
                 <h1>21<sup>o</sup></h1>
                 <h2>Current Weather</h2>
@@ -53,11 +52,11 @@
                
       </div>
     </div>
+    </div>
 
          <div class="tab-indicator"></div>
       <div class="tab-body">
         <div class="active">
-                  <div>
             
                   <h1>21<sup>o</sup></h1>
                   <h2>time</h2>
@@ -84,11 +83,11 @@
                  
         </div>
       </div>
+      </div>
                
         <div class="tab-indicator"></div>
         <div class="tab-body">
           <div class="active">
-                    <div>
               
                     <h1>21<sup>o</sup></h1>
                     <h2>time</h2>
@@ -114,13 +113,13 @@
                       <span>Hyderabad, India</span>
                    
           </div>
+        </div>
         </div>
                  
 
         <div class="tab-indicator"></div>
         <div class="tab-body">
           <div class="active">
-                    <div>
               
                     <h1>21<sup>o</sup></h1>
                     <h2>time</h2>
@@ -147,12 +146,8 @@
                    
           </div>
         </div>
+        </div>
                  
-  
-
-
-
-     </div>
     </div>
       <script>
           let tabHeader = document.getElementsByClassName("tab-header")[0];
@@ -169,7 +164,7 @@ for(let i=0;i<tabsPane.length;i++){
     tabBody.getElementsByTagName("div")[i].classList.add("active");
     
     tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
-m  });
+ });
 }
       </script>
     </div>
