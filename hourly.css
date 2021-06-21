@@ -2,6 +2,7 @@
 
 
 
+
 .banner-area{
     height: 100vh;
     background-image: url();
@@ -576,7 +577,7 @@ top: -10px;
       text-shadow: 1px 1px 5px #707070;
     }.gallery{
       position: absolute;
-      top: 700px;
+      top: 600px;
     }
       
         
