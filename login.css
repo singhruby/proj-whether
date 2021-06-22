@@ -1,17 +1,14 @@
 body{
     margin: auto;
-    background-image: url(unnamed\ \(1\).jpg);
+    background-image: url(loginpageimage.jpg);
     background-repeat: no-repeat;
     background-size: 100% 720px;
-    
-
-
 
 
     
 }.loginbox{
-    width: 320px;
-    height: 420px;
+    width: 390px;
+    height: 450px;
     background: #000;
     color: #fff;
     top: 50%;
