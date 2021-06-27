@@ -84,8 +84,8 @@ top: -10px;
     width: 100%;
     float: right;
     list-style: none;
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: 165px;
     left: 50%;
     transform: translate(-50%,-50%);
     -moz-tab-size:16;
@@ -145,13 +145,13 @@ top: -10px;
     text-align: center;
 }.location2{
     text-align: center;
-    width: 300px;
+    width: 200px;
     
 }.search-btn
 {
     height: 50px;
-    width: 200px;
-    background: #ffeb3b;
+    width: 150px;
+    background: lightseagreen;
     border: none;
     color: #000;
     border-radius: 25px;
@@ -335,7 +335,7 @@ top: -10px;
       position: absolute;
       right: 200px;
       top: 10px;
-      background-color: red;
+      background-color: orange;
       
     }.weather-box2 .bottom2{
       display: table-cell;
@@ -442,7 +442,7 @@ top: -10px;
             position: absolute;
             right: 200px;
             top: 10px;
-            background-color: blueviolet;
+            background-color: red;
             
             display: inline-block;
           }

@@ -47,13 +47,52 @@
                     <div class="container">
                       <div class="glassmorphism">
                           <div class="weather-box1">
+
+                           
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                            
+                            
+                            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                            
+                            <script>
+                            var xValues = ["Excellent", "good", "poor", "unhealthy", "severe"];
+                            var yValues = [0, 0, 100, 0, 0];
+                            var barColors = [
+                              "green",
+                              "lightgreen",
+                              "orange",
+                              "violet",
+                              "red"
+                            ];
+                            
+                            new Chart("myChart", {
+                              type: "doughnut",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                title: {
+                                  display: true,
+                                  text: "Current Air Quality"
+                                }
+                              }
+                            });
+                            </script>
+                            
                           
-                              <h2>Current Air quality</h2>
-                              <p>it,s poor <br>The air has reached a high level of pollution and is unhealthy for sensitive groups. Reduce time spent outside if you are feeling symptoms such as difficulty breathing or throat irritation. </p>
+                            
+                               
+                             
+                              <h2>Current Air  <br>Quality</br></h2>
+                             
                               <div class="location">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i> 
                                 <span>Hyderabad, India</span>
-                              </div> 
+                              </div>
                             </div>
                               <div class="weather-box2">
                                 <div class="bottom">
@@ -61,14 +100,13 @@
                                     <span>The air has reached a high level of pollution and is unhealthy for sensitive groups</br> </span></div>
                                    </br> </b></div>
                                
-                              
-                                    
-                                  
+                          
+                                 
                                         
                                           
                                   <div class="bottom5">
                                     <hr style="border-color: #660000;">
-                                    <div>Dangerous<br><b>
+                                    <div>Severe<br><b>
                                       <span class="dot5"></span>
                                      <span>Any exposure to the air, even for a few minutes, can lead to serious health effects on everybody. Avoid outdoor activities.</span></div>
                                     </br> </b></div>
@@ -101,39 +139,7 @@
                      </div> 
                               </div>
 
-                              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                              <script type="text/javascript">
-                                google.charts.load("current", {packages:["corechart"]});
-                                google.charts.setOnLoadCallback(drawChart);
-                                function drawChart() {
-                                  var data = google.visualization.arrayToDataTable([
-                                    ['Task', 'Hours per Day'],
-                                    ['Work',     11],
-                                    ['Eat',      2],
-                                    ['Commute',  2],
-                                    ['Watch TV', 2],
-                                    ['Sleep',    7]
-                                  ]);
-                          
-                                  var options = {
-                                    title: 'My Daily Activities',
-                                    is3D: true,
-                                  };
-                          
-                                  var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-                                  chart.draw(data, options);
-                                }
-                              </script>
-                          </head>
-                          <body>
-                              <div style="margin: 10px 0 0 10px;width: 1000px">
-                                  <h3>Python Flask Show Data on Google Pie Chart</h3>
-                                 
-                                  <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-                              </div>
-
-
-
+                              
                              
                           <div class="drops">
                             <div class="drop drop-1"></div>
