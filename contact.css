@@ -14,78 +14,62 @@ body{
     position: relative;
     background-repeat: no-repeat;
 
-}.area{
-    box-sizing: content-box;
-    width: 1500px;
-    height: 100px;
-    position: relative;
-    top: -25px;
-   background: rgba(0,0,0,0.7);
-   padding: 25px;
-   margin-bottom: 10px;
-}.area h4{
-    font-family: baloo;
-    margin: 0;
-    font-size: 40px;
-    color: #fff;
-    left: 150px;
-    position: relative;
-    top: -65px;
-  } 
-  .icons{
-    width: 10%;
-    left: 190px;
-    top: -10px;
-    margin-bottom: -10px;
-  
-    
-  }
+}
+.area
+{position: relative;
+  top: -10px;
+ background: rgba(0,0,0,0.7);
+ padding: 5px;
+ 
 
-.menu {
-    width: 50%;
-    float: right;
-    list-style: none;
-    position: relative;
-    top: -85px;
-    left: 25%;
-    transform: translate(-50%,-50%);
 }
-.menu li{
-    width: 20%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 13px;
-    float: left;
-    padding: 5px;
-    color: #fff;
-     
-}
-.menu li:hover{
-}.menu li a{
-    width: 100%;
-    height: 30px;
-    text-decoration: none;
-    font-family: poppins;
-    color: #fff;
-    text-transform: uppercase; 
-    position: relative;
+header{
+    padding: 15px 60px;
+    display: flex;
+    align-items: center;
     
-    padding: 20px;
-    font-size: 17px;
-    font-family: poppins;
-    font-weight: 100;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: 1.5s;  
+}.area h4{
+  font-family: baloo;
+  margin: 0;
+  font-size: 50px;
+  color: #fff;
+  left: 150px;
+  position: relative;
+  top: -50px;
+} 
+.icons{
+  width: 8%;
+  left: 190px;
+  top: -5px;
+  margin-bottom: -10px;
+
+}.area2{float: right;
+  list-style: none;
+top: -10px;
+  margin-top: -80px;
+
+
 }
-.menu li:hover a{
-   box-shadow: 0 5px 50px 0 #fff inset,0 5px 50px 0 #fff,
-    0 5px 50px 0 #fff inset,0 5px 50px 0 #fff;
+.area2 li{
+  display: inline-block;
+
+} .area2 li:hover{
+  background: aqua;
+}
+.area2 li a{
+  color:#fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: baloo;
+  font-size: 20px;
+}
+.area2 li a:hover{
+  background: #fff;
+  color: aqua;
+
 }
 .empty{
-    width: 100%;
+    width: 200%;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
